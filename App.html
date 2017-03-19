@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello, React!</title>
+</head>
+<body>
+
+<!-- React Root -->
+<div id="root"></div>
+
+<!-- React 라이브러리 -->
+<script src="https://unpkg.com/react@latest/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@latest/dist/react-dom.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@latest/babel.min.js"></script>
+
+<!-- Reac 코드 -->
+<script type="text/babel">
+const Hello = ({ message }) => {
+  return (
+    <div>
+      <h1>Hello, { message }!</h1>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Hello message="React"/>,
+  document.getElementById("root")
+);
+</script>
+
+</body>
+</html>
